@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    margin: 5rem;
+}
+
+/* Background Colors */
+
+.sedans-container {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0px 0px; 
+}
+
+.suvs-container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 8px 8px; 
+}
+
+.sedans-container, .suvs-container, .luxury-container {
+    line-height: 1.5;
+    padding-bottom: 3rem;
+}
+
+/* Typography */
+
+.headings {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+    font-size: 35px;
+    margin: 1rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+}
+ 
+ .paragraphs {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    width: 80%;
+    padding-left: 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+/* "Learn More" buttons */
+
+.buttons {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px / 50px;
+    font-family: 'Lexend Deca';
+    padding: 0.8rem;
+    text-decoration: none;
+    word-spacing: 1px;
+    margin: 2rem;
+}
+
+.sedans-color-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans-color-button:hover {
+    background-color: hsl(40, 100%, 96%) ;
+}
+
+.suvs-color-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs-color-button:hover {
+    background-color: hsl(184, 100%, 96%);
+}
+
+.luxury-color-button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-color-button:hover {
+    background-color: hsl(179, 100%, 96%);
+}
+
+/* Icons */
+
+.icons {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+/* Flex */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+
+    /* Flex */
+
+    .container {
+        flex-direction: row;
+        
+    }
+
+    /* Border style */
+
+    .sedans-container {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .luxury-container {
+        border-radius: 0px 8px 8px 0px; 
+    }
+
+    /* Padding */
+
+    .sedans-container, .suvs-container, .luxury-container {
+        padding-bottom: 10rem;
+    }
+
+    /* Typography */
+ 
+    .headings {
+        font-size: 35px;
+    }
+
+    .paragraphs {
+        font-size: 20px;
+    }
+}
